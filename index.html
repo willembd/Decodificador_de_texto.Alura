@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/favicon_D.ico" type="image/x-icon">
+    <title>Decodificador</title>
+   
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="https://www.alura.com.br/" target="_blank"><img class="cabecalho_menu_alura_img" src="./img/alura_logo.png" alt=""></a>
+        <p class="cabecalho_menu_p">Decodificador de Texto</p>
+    </header>
+
+    <main class="main">
+        <section>
+            <div class="container_input">
+                <textarea id="container_input_text" placeholder="Digite o seu texto aqui" maxlength="100"></textarea>
+                <p>ATENÇÃO: Apenas Letras Maiúsculas, sem Acento e no máximo 100 Caracteres</p>
+            </div>
+
+            <div class="container_bnt">
+                <button onclick="criptografar()" >
+                    Criptografar
+                </button>
+                <button onclick="descriptografar()" class="bnt_descritografar">
+                    Descriptografar
+                </button>
+            </div>
+        </section>
+
+
+        <section id="aparece">
+            <div id="container_aparece">
+                <h2>Aqui estará sua mensagem Criptografada!</h2>
+                <p id="resultado">Carregando...</p>
+                <div class="container_btn_copiar">
+                    <button class="btn_copiar" onclick="copiar()">Copiar</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer_container">
+            
+            <a  href="https://github.com/willembd"><img id="footer_container_img" src="img/icons8-github-30.png" alt=""></a>
+
+            <p id="footer_container_p">Willemberg Bruno Dias</p>
+
+            <a  href="https://www.linkedin.com/in/willemberg-bruno/"><img id="footer_container_img" src="img/icons8-linkedin-50 (1).png" alt=""></a>
+           
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
